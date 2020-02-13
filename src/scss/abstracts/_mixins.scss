@@ -1,7 +1,7 @@
 @mixin global-grid {
   display: grid;
-  grid-template-columns: minmax(5.555rem, 1fr) minmax(min-content, 55.555rem) minmax(
-      5.555rem,
+  grid-template-columns: minmax(3rem, 1fr) minmax(min-content, 55.555rem) minmax(
+      3rem,
       1fr
     );
 }

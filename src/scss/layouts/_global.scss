@@ -1,4 +1,4 @@
 .container {
-  grid-template-rows: 70vh;
+  grid-template-rows: minmax(max-content, 70vh);
   @include global-grid;
 }

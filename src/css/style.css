@@ -354,7 +354,7 @@ html {
 body {
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
-  line-height: 1.65;
+  line-height: 1.6;
   color: #616e7c; }
 
 p {
@@ -437,9 +437,9 @@ This file is used to contain all component imports.
 Files inside this folder can contain specific element styles and layout.
 */
 .container {
-  grid-template-rows: 70vh;
+  grid-template-rows: minmax(max-content, 70vh);
   display: grid;
-  grid-template-columns: minmax(5.555rem, 1fr) minmax(min-content, 55.555rem) minmax(5.555rem, 1fr); }
+  grid-template-columns: minmax(3rem, 1fr) minmax(min-content, 55.555rem) minmax(3rem, 1fr); }
 
 .header {
   background-color: #4c63b6;
@@ -447,7 +447,7 @@ Files inside this folder can contain specific element styles and layout.
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: minmax(5.555rem, 1fr) minmax(min-content, 55.555rem) minmax(5.555rem, 1fr);
-  margin-bottom: 5rem; }
+  padding-bottom: 3rem; }
   .header .links {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
@@ -464,10 +464,11 @@ Files inside this folder can contain specific element styles and layout.
 .projects {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
-  row-gap: 5rem; }
+  row-gap: 5rem;
+  margin-top: 2rem; }
   .projects .project {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     column-gap: 1.5rem;
     row-gap: 1rem;
     align-items: center;
@@ -496,5 +497,5 @@ Files inside this folder can contain specific element styles and layout.
   grid-column: 1 / -1;
   background-color: grey;
   display: grid;
-  grid-template-columns: minmax(5.555rem, 1fr) minmax(min-content, 55.555rem) minmax(5.555rem, 1fr);
+  grid-template-columns: minmax(3rem, 1fr) minmax(min-content, 55.555rem) minmax(3rem, 1fr);
   margin-top: 5rem; }
