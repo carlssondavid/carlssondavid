@@ -1,0 +1,15 @@
+{
+  "name": "carlssondavid.github.io",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass --watch src/scss/styles.scss src/css/style.css"
+  },
+  "author": "David Carlsson",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {}
+}
