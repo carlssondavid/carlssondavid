@@ -1,0 +1,43 @@
+.projects {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  row-gap: 5rem;
+
+  .project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    align-items: center;
+
+    margin-bottom: $margin--lg;
+
+    &__img {
+      object-fit: cover;
+      background-position: center;
+    }
+
+    &__content {
+      .text--small {
+        margin-bottom: 25px;
+      }
+    }
+
+    &__info h3 {
+      margin-top: 0;
+    }
+
+    &__para {
+      margin-bottom: 0.5rem;
+    }
+
+    &__links {
+      margin-left: -5px;
+    }
+
+    .btn {
+      margin-right: 0.5rem;
+    }
+  }
+}

@@ -317,6 +317,7 @@ Files inside this folder can contain abstract settings, helpers or functions. Th
 /* Neutral colors */
 /* TYPOGRAPHY VARIABLES */
 /* BOX-SHADOWS */
+/* SPACING */
 /*
 This file is used to contain all base imports.
 Files inside this folder can contain global styles used in the project.
@@ -340,6 +341,11 @@ a {
   text-decoration: none;
   color: #fff; }
 
+img {
+  display: block;
+  max-width: 100%;
+  max-height: auto; }
+
 /* Here I add the style of my typography */
 html {
   font-size: 112.5%; }
@@ -361,10 +367,12 @@ h4,
 h5 {
   margin: 2.75rem 0 1.05rem;
   font-family: "Source Sans Pro", sans-serif;
+  color: #1f2933;
   font-weight: 400;
   line-height: 1.15; }
 
 h1 {
+  color: #fff;
   margin-top: 0;
   font-size: 2.488rem; }
 
@@ -381,8 +389,12 @@ h5 {
   font-size: 1.2rem; }
 
 small,
-.text_small {
-  font-size: 0.833rem; }
+.text--small {
+  font-size: 0.833rem;
+  display: inline-block;
+  font-weight: 700;
+  color: #127fbf;
+  margin-right: 1rem; }
 
 /*
 This file is used to contain all component imports.
@@ -425,29 +437,64 @@ This file is used to contain all component imports.
 Files inside this folder can contain specific element styles and layout.
 */
 .container {
-  max-width: 90%;
-  margin: 0 auto;
-  width: 55.5555rem; }
-  .container--small {
-    max-width: 90%;
-    margin: 0 auto;
-    width: 27.7777rem; }
-
-/* GRID LAYOUT */
-.wrapper {
+  grid-template-rows: 70vh;
   display: grid;
-  grid-template-rows: 80vh; }
+  grid-template-columns: minmax(5.555rem, 1fr) minmax(min-content, 55.555rem) minmax(5.555rem, 1fr); }
 
 .header {
   background-color: #4c63b6;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(5.555rem, 1fr) minmax(min-content, 55.555rem) minmax(5.555rem, 1fr);
+  margin-bottom: 5rem; }
+  .header .links {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    justify-self: end;
+    margin: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 1rem; }
+  .header .heading {
+    color: #fff;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3; }
 
-.links {
-  position: absolute;
-  right: 2rem;
-  top: 1rem; }
-  .links .link {
-    margin-left: 1rem; }
+.projects {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  row-gap: 5rem; }
+  .projects .project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    align-items: center;
+    margin-bottom: 5rem; }
+    .projects .project__img {
+      object-fit: cover;
+      background-position: center; }
+    .projects .project__content .text--small {
+      margin-bottom: 25px; }
+    .projects .project__info h3 {
+      margin-top: 0; }
+    .projects .project__para {
+      margin-bottom: 0.5rem; }
+    .projects .project__links {
+      margin-left: -5px; }
+    .projects .project .btn {
+      margin-right: 0.5rem; }
+
+.about-me {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  margin-top: 5rem; }
+
+.footer {
+  grid-row: 4 / 5;
+  grid-column: 1 / -1;
+  background-color: grey;
+  display: grid;
+  grid-template-columns: minmax(5.555rem, 1fr) minmax(min-content, 55.555rem) minmax(5.555rem, 1fr);
+  margin-top: 5rem; }

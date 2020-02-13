@@ -1,4 +1,7 @@
-@mixin container-base {
-  max-width: 90%;
-  margin: 0 auto;
+@mixin global-grid {
+  display: grid;
+  grid-template-columns: minmax(5.555rem, 1fr) minmax(min-content, 55.555rem) minmax(
+      5.555rem,
+      1fr
+    );
 }
