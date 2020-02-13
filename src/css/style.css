@@ -416,7 +416,7 @@ Files inside this folder should contain all styles relating to a reusable compon
   font-weight: 700;
   color: #fff; }
   .btn:hover {
-    background-color: #19216c;
+    background-color: #5ed0fa;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px); }
   .btn--hollow {
@@ -425,8 +425,8 @@ Files inside this folder should contain all styles relating to a reusable compon
     color: #35469c;
     box-shadow: none; }
     .btn--hollow:hover {
-      border: 1px solid #19216c;
-      background-color: #19216c;
+      border: 1px solid #5ed0fa;
+      background-color: #5ed0fa;
       color: #fff;
       transform: translateY(-2px); }
   .btn--square {
@@ -448,14 +448,21 @@ Files inside this folder can contain specific element styles and layout.
   display: grid;
   grid-template-columns: minmax(5.555rem, 1fr) minmax(min-content, 55.555rem) minmax(5.555rem, 1fr);
   padding-bottom: 3rem; }
-  .header .links {
+  .header .social {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     justify-self: end;
     margin: 1rem 2rem;
     display: grid;
     grid-template-columns: repeat(3, min-content);
-    gap: 1rem; }
+    gap: 1.4rem; }
+    .header .social__link {
+      color: #fff;
+      font-size: 1.8rem;
+      transition: all 0.25s; }
+      .header .social__link:hover {
+        color: #5ed0fa;
+        transform: translateY(-2px); }
   .header .heading {
     color: #fff;
     grid-row: 2 / 3;
