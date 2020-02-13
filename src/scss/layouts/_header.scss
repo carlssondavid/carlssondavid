@@ -1,0 +1,18 @@
+.header {
+  background-color: $color-primary;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.links {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+
+  .link {
+    margin-left: 1rem;
+  }
+}

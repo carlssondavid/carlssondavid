@@ -1,0 +1,15 @@
+.container {
+  @include container-base;
+  width: 55.5555rem;
+
+  &--small {
+    @include container-base;
+    width: 27.7777rem;
+  }
+}
+
+/* GRID LAYOUT */
+.wrapper {
+  display: grid;
+  grid-template-rows: 80vh;
+}
