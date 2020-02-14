@@ -5,11 +5,12 @@
   grid-column: 1 / -1;
 
   display: grid;
-  // grid-template-rows: 80vh;
+  grid-template-rows: min-content 1fr;
   grid-template-columns: minmax(5.555rem, 1fr) minmax(min-content, 55.555rem) minmax(
       5.555rem,
       1fr
     );
+  align-items: center;
 
   padding-bottom: 3rem;
 
@@ -29,8 +30,7 @@
       transition: all 0.25s;
 
       &:hover {
-        color: $color-secondary--lighter;
-        transform: translateY(-2px);
+        transform: translateY(-4px);
       }
     }
   }
