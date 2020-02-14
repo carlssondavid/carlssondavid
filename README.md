@@ -7,5 +7,9 @@ I created the website using HTML/SCSS and plain JavaScript. In addition to that 
 * Figma - where I created my mockup.
 ## Goals with this project
 
+### Initial idea
+![Website mockup](static/Mockup.png)
 ## Project status
 Work in progress
+
+
