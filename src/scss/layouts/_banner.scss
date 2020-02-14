@@ -1,0 +1,43 @@
+.banner {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  column-gap: 2rem;
+  margin-bottom: $margin--bt;
+
+  .about-me {
+    &__heading {
+    }
+
+    &__description {
+    }
+  }
+
+  .skills {
+    &__heading {
+    }
+
+    &__description {
+    }
+
+    &__techlist {
+      li {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 1.2em;
+        text-indent: -1.2em;
+
+        &::before {
+          content: "\2012";
+          display: block;
+          float: left;
+          width: 1.2em;
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}

@@ -1,44 +1,39 @@
 .projects {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
-  row-gap: 5rem;
-  margin-top: 2rem;
+
+  &__heading {
+    margin-bottom: 1rem;
+  }
 
   .project {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-
-    column-gap: 1.5rem;
-    row-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     align-items: center;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    margin-bottom: $margin--bt;
 
-    margin-bottom: $margin--lg;
-
-    &__img {
-      object-fit: cover;
-      background-position: center;
-      box-shadow: $shadow-primary;
-    }
-
-    &__content {
-      .text--small {
-        margin-bottom: 25px;
-      }
-    }
-
-    &__info h3 {
+    &__header {
       margin-top: 0;
     }
 
-    &__para {
-      margin-bottom: 0.5rem;
+    &__description {
+      margin-bottom: 0.7rem;
     }
 
-    &__links {
-      margin-left: -5px;
+    &__techlist {
+      list-style: none;
+      display: flex;
+      margin-bottom: 1.2rem;
+
+      li {
+        margin-right: 1rem;
+      }
     }
 
-    .btn {
+    button:nth-child(1) {
+      margin-left: -4px;
       margin-right: 0.5rem;
     }
   }

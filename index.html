@@ -6,10 +6,10 @@
     <title>David Carlsson</title>
 
     <link rel="stylesheet" href="/src/css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/c31ede3f29.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="static/fontawesome-free-5.12.1-web/css/all.css"
+    />
   </head>
   <body class="container">
     <header class="header">
@@ -50,96 +50,98 @@
     </header>
 
     <main class="projects">
-      <h2>Recent projects</h2>
+      <h2 class="projects__heading">Recent projects</h2>
 
       <div class="project">
-        <img
-          src="http://placehold.jp/800x600.png"
-          alt=""
-          class="project__img"
-        />
+        <div class="project__image">
+          <img src="http://placehold.jp/700x600.png" alt="" />
+        </div>
+
         <div class="project__content">
-          <div class="project__info">
-            <h3>Personal website</h3>
-            <p class="project__para">
-              Building this website taught be a alot about architecture and UI
-              design.
-            </p>
+          <h3 class="project__header">My project</h3>
 
-            <p class="text--small">SCSS</p>
-            <p class="text--small">Vanilla js</p>
+          <p class="project__description">
+            Building this website taught be a alot about architecture and UI
+            design. Building this website taught be a alot about architecture
+            and UI design.
+          </p>
 
-            <div class="project__links">
-              <button><a href="" class="btn">Live preview</a></button>
-              <button>
-                <a href="" class="btn btn--hollow">Source code</a>
-              </button>
-            </div>
+          <ul class="project__techlist  text--small">
+            <li>Tech 1</li>
+            <li>Tech 2</li>
+          </ul>
+
+          <div class="project__links">
+            <button><a class="btn" href="#">Live preview</a></button>
+            <button>
+              <a class="btn btn--hollow" href="#">Source code</a>
+            </button>
           </div>
         </div>
       </div>
 
       <div class="project">
-        <img
-          src="http://placehold.jp/800x600.png"
-          alt=""
-          class="project__img"
-        />
-        <div class="project__content">
-          <div class="project__info">
-            <h3>My app</h3>
-            <p class="project__para">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
-              nibh magna vivamus massa mattis feugiat. Tristique id id eu amet
-              sociis fringilla adipiscing. Sed eget nulla eu ultricies at sit ut
-              viverra.
-            </p>
-
-            <p class="text--small">React.js</p>
-            <p class="text--small">Node.js</p>
-
-            <div class="project__links">
-              <button><a href="" class="btn">Live preview</a></button>
-              <button>
-                <a href="" class="btn btn--hollow">Source code</a>
-              </button>
-            </div>
-          </div>
+        <div class="project__image">
+          <img src="http://placehold.jp/700x600.png" alt="" />
         </div>
-      </div>
 
-      <div class="project">
-        <img
-          src="http://placehold.jp/800x600.png"
-          alt=""
-          class="project__img"
-        />
         <div class="project__content">
-          <div class="project__info">
-            <h3>My app</h3>
-            <p class="project__para">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
-              nibh magna vivamus massa mattis feugiat. Tristique id id eu amet
-              sociis fringilla adipiscing. Sed eget nulla eu ultricies at sit ut
-              viverra.
-            </p>
+          <h3 class="project__header">My project</h3>
 
-            <p class="text--small">React.js</p>
-            <p class="text--small">Node.js</p>
+          <p class="project__description">
+            Building this website taught be a alot about architecture and UI
+            design. Building this website taught be a alot about architecture
+            and UI design.
+          </p>
 
-            <div class="project__links">
-              <button><a href="" class="btn">Live preview</a></button>
-              <button>
-                <a href="" class="btn btn--hollow">Source code</a>
-              </button>
-            </div>
+          <ul class="project__techlist  text--small">
+            <li>Tech 1</li>
+            <li>Tech 2</li>
+          </ul>
+
+          <div class="project__links">
+            <button><a class="btn" href="#">Live preview</a></button>
+            <button>
+              <a class="btn btn--hollow" href="#">Source code</a>
+            </button>
           </div>
         </div>
       </div>
     </main>
 
-    <section class="about-me">
-      About me
+    <section class="banner">
+      <section class="about-me">
+        <h2 class="about-me__heading">About me</h2>
+        <p class="about-me__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
+          commodo euismod vitae, etiam pulvinar lorem tellus. Cursus sed mattis
+          nisl elit orci pharetra suspendisse tortor viverra.
+        </p>
+        <p class="about-me__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
+          commodo euismod vitae, etiam pulvinar lorem tellus. Cursus sed mattis
+          nisl elit orci pharetra suspendisse tortor viverra.
+        </p>
+      </section>
+      <section class="skills">
+        <h2 class="skills__heading">Technologies I work with</h2>
+        <p class="skills__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum
+          commodo euismod vitae, etiam pulvinar lorem tellus. Cursus sed mattis
+          nisl elit orci pharetra suspendisse tortor viverra.
+        </p>
+        <ul class="skills__techlist">
+          <li>HTML/CSS (SCSS)</li>
+          <li>JavaScript</li>
+          <li>React.js</li>
+          <li>tech 4</li>
+          <li>tech 5</li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="contact">
+      Contact
     </section>
 
     <footer class="footer">

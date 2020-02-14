@@ -1,8 +1,9 @@
 .footer {
-  grid-row: 4 / 5;
+  grid-row: 5 / 6;
   grid-column: 1 / -1;
-  background-color: grey;
+  background-color: $color-neutral--darker;
 
-  @include global-grid;
-  margin-top: $margin--lg;
+  text-align: center;
+  /* temporary */
+  height: 12rem;
 }
